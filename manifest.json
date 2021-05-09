@@ -1,0 +1,11 @@
+{
+    "name": "Random Korean word",
+    "description": "Get a random Korean word",
+    "version": "1.0",
+    "author": "Ivan Ivanov",
+    "manifest_version": 3,
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
