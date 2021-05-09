@@ -1035,7 +1035,16 @@ document.addEventListener("DOMContentLoaded", function () {
             ...lesson7, ...lesson8, ...lesson9,
             ...lesson10, ...lesson11, ...lesson12
         ];
+
         const randWord = words[Math.floor(Math.random() * words.length)];
         document.getElementById("showWord").innerHTML = randWord;
+        let msg = new SpeechSynthesisUtterance();
+        if (/^[a-zA-Z]+$/.test(randWord)) {
+            msg.lang = "en-US"
+        } else {
+            msg.lang = "ko-KR";
+        }
+        msg.text = randWord;
+        window.speechSynthesis.speak(msg);
     });
 });
