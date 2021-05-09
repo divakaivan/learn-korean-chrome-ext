@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var button = document.getElementById("getWord");
+    let button = document.getElementById("getWord");
 
     button.addEventListener("click", function () {
         const lesson1to4 = [
