@@ -6,6 +6,12 @@
     "manifest_version": 3,
     "permissions": ["storage"],
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "hangug.png",
+            "32": "hangug.png",
+            "48": "hangug.png",
+            "128": "hangug.png"
+        }
     }
 }
